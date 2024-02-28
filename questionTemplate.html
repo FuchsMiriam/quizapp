@@ -35,33 +35,35 @@
                 <div class="card-body">
                     <h5 class="card-title mb-3" id="questionText">Frage</h5>
 
-                    <div class="card mb-2">
+                    <div class="card quizAnswerCard mb-2" onclick="answer('answer_1')">
                         <div class="card-body" id="answer_1">
                             This is some text within a card body.
                         </div>
                     </div>
 
-                    <div class="card mb-2">
+                    <div class="card quizAnswerCard mb-2" onclick="answer('answer_2')">
                         <div class="card-body" id="answer_2">
                             This is some text within a card body.
                         </div>
                     </div>
 
-                    <div class="card mb-2">
+                    <div class="card quizAnswerCard mb-2" onclick="answer('answer_3')">
                         <div class="card-body" id="answer_3">
                             This is some text within a card body.
                         </div>
                     </div>
 
-                    <div class="card mb-2">
+                    <div class="card quizAnswerCard mb-2" onclick="answer('answer_4')">
                         <div class="card-body" id="answer_4">
                             This is some text within a card body.
                         </div>
                     </div>
 
                     <div class="questionFooter">
-                        <span><b>1</b> von <b id="allQuestions"></b> Fragen</span>
-                        <button class="btn btn-primary" type="submit">Nächste Frage</button>
+                        <span><b id="currentNumber">1</b> von <b id="allQuestions"></b> Fragen</span>
+                        <button onclick="showNextQuestion()" id="questionButton" class="btn btn-primary" type="submit"
+                            disabled>Nächste
+                            Frage</button>
                     </div>
 
                 </div>
