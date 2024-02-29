@@ -20,6 +20,9 @@ let questions = [
 ]
 
 
+let correctAnswers = 0;
+
+
 let currentQuestion = 0;
 
 
@@ -56,6 +59,7 @@ function answer(selection) {
     if (selectedQuestionNumber == question['correctAnswer']) //Die Bedingung if (selectedQuestionNumber == question['correct_answer']) {...} vergleicht die ausgewählte Antwort (durch die extrahierte letzte Ziffer) mit der richtigen Antwort (correct_answer) der aktuellen Frage. Wenn sie übereinstimmen, wird der Code im ersten Block nach dem if ausgeführt.
     {
         document.getElementById(selection).parentNode.classList.add('bg-success');
+        correctAnswers++;
     } else {
         document.getElementById(selection).parentNode.classList.add('bg-danger');
         document.getElementById(idOfCorrectAnswer).parentNode.classList.add('bg-success');
@@ -90,12 +94,14 @@ function showEndScreen() {
     <div class="endScreen">
     <img class="imageEndScreen mb-2" src="./img/brainResult.png" alt="Ergebnis">
     <span class="completedText"><b>Completed Quiz</b></span>
-    <span class="scoreText"><b>Your Score</b></span>
+    <span class="scoreText"><b>Your Score:</b> <b id="amountOfCorrectAnswers">XXX</b>/<b id="amountOfQuestions">XXX</b></span>
     <button class="btn btn-primary mb-2 buttonStyle">Share</button>
-    <a class="endScreenLink" href="index.html">Replay</a>
+    <a class="endScreenLink" href="questionTemplate.html">Replay</a>
     </div>
     <div class="trophy">
     <img class="trophyEndScreen mb-2" src="./img/trophy.png" alt="Trophäe">
     </div>
 `;
+    document.getElementById('amountOfQuestions').innerHTML = questions.length;
+    document.getElementById('amountOfCorrectAnswers').innerHTML = correctAnswers;
 }
