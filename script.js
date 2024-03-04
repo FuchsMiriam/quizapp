@@ -25,7 +25,7 @@ let questions = [
         "correctAnswer": 1
     },
     {
-        "question": "Was ist der Hersteller des legendären '911' Sportwagens?",
+        "question": "Wer ist der Hersteller des legendären '911' Sportwagens?",
         "answer_1": "Ferrari",
         "answer_2": "Porsche",
         "answer_3": "Lamborghini",
