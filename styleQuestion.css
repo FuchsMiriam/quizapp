@@ -136,3 +136,112 @@ body {
     height: 400px;
     width: auto;
 }
+
+
+@media (max-width: 950px) {
+    .leftSide {
+        width: 100px;
+    }
+
+
+    .leftImage {
+        height: 70px;
+    }
+
+
+    .leftSpan {
+        font-size: 18px;
+    }
+
+
+    .card {
+        width: 50%;
+    }
+
+
+    .card-title {
+        font-size: 20px;
+    }
+
+
+    .quizAnswerCard {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 680px) {
+    .btn-primary {
+        width: 50%;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 520px) {
+    .card-title {
+        font-size: 18px;
+    }
+
+
+    .btn-primary {
+        width: 50%;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .quizContent {
+        flex-direction: column;
+    }
+
+
+    .leftSide {
+        height: auto;
+        margin-left: 5px;
+        position: relative;
+    }
+
+
+    .quizCard {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 50px;
+        margin-left: 5px;
+    }
+
+    .answeredQuestions {
+        font-size: 14px;
+        padding-left: 5px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .card-title {
+        font-size: 16px;
+    }
+
+
+    .answeredQuestions {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .card-body {
+        font-size: 14px;
+    }
+
+
+    .btn-primary {
+        width: 70%;
+        font-size: 12px;
+    }
+
+
+    .questionFooter {
+        flex-direction: column;
+    }
+}

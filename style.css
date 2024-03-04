@@ -77,3 +77,80 @@ h2 {
     width: 250px;
     border-radius: 5px;
 }
+
+@media (max-width: 1010px) {
+    .leftSide {
+        width: 150px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .startButton {
+        font-size: 18px;
+        width: 150px;
+    }
+
+
+    .leftSide {
+        width: 120px;
+    }
+
+
+    .textLeft {
+        font-size: 22px;
+    }
+
+
+    h1 {
+        font-size: 24px;
+    }
+
+
+    h2 {
+        font-size: 20px;
+    }
+
+}
+
+
+@media (max-width: 490px) {
+    .leftSide {
+        width: 90px;
+    }
+
+
+    .leftImage {
+        height: 60px;
+    }
+
+
+    .textLeft {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 20px;
+    }
+
+
+    h2 {
+        font-size: 16px;
+    }
+
+
+    .startButton {
+        font-size: 16px;
+        width: 150px;
+    }
+}
+
+
+@media (max-width: 365px) {
+    .rightSideMiddle {
+        left: 55%;
+    }
+}
